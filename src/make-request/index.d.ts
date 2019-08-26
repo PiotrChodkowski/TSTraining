@@ -1,1 +1,1 @@
-export default function makeRequest<T>(url: string): Promise<T>;
+export default function makeRequest<x, y>(url: x): Promise<y>;
