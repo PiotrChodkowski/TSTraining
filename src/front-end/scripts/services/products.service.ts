@@ -1,10 +1,10 @@
 import {config} from "../configs/base";
 import { ProductList } from "../interface/prodcut-list.interface";
+import makeRequest from "../../../make-request/";
 
 class ProductService {
-    async getProducts(): Promise<ProductList> {
-        const response = await fetch(config.productsUrl);
-        return response.json();
+    async getProducts() {
+        return makeRequest<ProductList>(config.productsUrl)
     }
 }
 
