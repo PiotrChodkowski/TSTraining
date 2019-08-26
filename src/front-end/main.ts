@@ -1,5 +1,6 @@
-function test (v: string) {
-    return 123;
-}
+import "./index.html";
+import "./main.css";
 
-console.log(test());
+function main () {
+    console.log("main")
+}
