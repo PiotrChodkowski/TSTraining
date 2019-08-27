@@ -1,11 +1,8 @@
 import { Product } from "../interface/product.interface";
 import {log} from "../decorators/log.decorator";
+import {Component} from "./comp";
 
-export class ProductComponent {
-
-    data: any = null;
-    $el = document.createElement("div");
-
+export class ProductComponent extends Component {
     @log
 
     template (product: Product) {
@@ -21,14 +18,5 @@ export class ProductComponent {
                 </div>
             </div>
         `);
-    }
-
-    setData (data: Product) {
-            this.data = data;
-    }
-
-    render ($target: HTMLElement) {
-        this.$el.innerHTML = this.template(this.data);
-        $target.append(this.$el);
     }
 }

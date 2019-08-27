@@ -12,6 +12,7 @@
         "trailing-comma": ["off"],
         "space-before-function-paren": [true, "always"],
         "object-literal-sort-keys": ["off"],
+        "no-unused-variable": [true, {"ignore-pattern": "^_"}],
         "ordered-imports": ["off"]
     },
     "rulesDirectory": []
