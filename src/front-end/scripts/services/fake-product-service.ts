@@ -2,7 +2,7 @@ import products from "../../../shared/fakes/products.json";
 import { ProductList } from "../interface/prodcut-list.interface.js";
 
 class FakeProductService {
-    async getProducts(): Promise<ProductList>{
+    async getProducts (): Promise<ProductList> {
         return products;
     }
 }

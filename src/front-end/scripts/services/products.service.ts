@@ -3,8 +3,8 @@ import { ProductList } from "../interface/prodcut-list.interface";
 import makeRequest from "../../../make-request/";
 
 class ProductService {
-    async getProducts() {
-        return makeRequest<string, ProductList>(config.productsUrl)
+    async getProducts () {
+        return makeRequest<string, ProductList>(config.productsUrl);
     }
 }
 

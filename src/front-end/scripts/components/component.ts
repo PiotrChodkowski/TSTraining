@@ -1,9 +1,12 @@
 import { Product } from "../interface/product.interface";
+import {log} from "../decorators/log.decorator";
 
 export class ProductComponent {
 
     data: any = null;
-    $el = document.createElement('div');
+    $el = document.createElement("div");
+
+    @log
 
     template (product: Product) {
         return (`
@@ -17,15 +20,15 @@ export class ProductComponent {
                     </button>
                 </div>
             </div>
-        `)
+        `);
     }
-    
-    setData(data: Product) {
+
+    setData (data: Product) {
             this.data = data;
     }
 
-    render($target: HTMLElement) {
+    render ($target: HTMLElement) {
         this.$el.innerHTML = this.template(this.data);
-        $target.append(this.$el)
+        $target.append(this.$el);
     }
 }
