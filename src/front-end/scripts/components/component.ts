@@ -3,12 +3,7 @@ import { Product } from "../interface/product.interface";
 export class ProductComponent {
 
     data: any = null;
-    $el: any = null;
-
-    constructor() {
-        this.$el = document.createElement('div');
-        this.$el.classList.add('product');
-    }
+    $el = document.createElement('div');
 
     template (product: Product) {
         return (`
