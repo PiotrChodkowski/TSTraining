@@ -1,4 +1,4 @@
-import { Product } from "../interface/product.interface";
+import { Product } from "../../../shared/interface/product.interface";
 import {log} from "../decorators/log.decorator";
 import {Component} from "./comp";
 

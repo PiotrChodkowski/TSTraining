@@ -1,5 +1,5 @@
 import {config} from "../configs/base";
-import { ProductList } from "../interface/prodcut-list.interface";
+import { ProductList } from "../../../shared/interface/prodcut-list.interface";
 import makeRequest from "../../../make-request/";
 
 class ProductService {
