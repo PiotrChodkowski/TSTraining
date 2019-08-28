@@ -1,7 +1,6 @@
 import {Products} from "../../front-end/scripts/services/products.service";
 import nock from "nock";
 import "isomorphic-fetch";
-import { jsxExpressionContainer } from "@babel/types";
 
 describe("getProducts", () => {
     it("is a function", () => {

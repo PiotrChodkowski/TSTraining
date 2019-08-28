@@ -3,10 +3,6 @@ export abstract class Component {
     data: any = null;
     $el = document.createElement("div");
 
-    protected template (data: any) {
-        return ``;
-    }
-
     setData (data: any) {
         this.data = data;
 }
@@ -16,4 +12,7 @@ export abstract class Component {
         $target.append(this.$el.firstElementChild as HTMLElement);
     }
 
+    protected template (data: any) {
+        return ``;
+    }
 }
